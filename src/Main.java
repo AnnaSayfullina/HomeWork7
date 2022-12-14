@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1 () {
@@ -54,7 +55,21 @@ public class Main {
         while (deposit <= 12_000_000) {
             deposit = deposit + deposit * percent;
             month++;
-            System.out.println("Месяц " + month + ", сумма накомплений равна " + deposit + " рублей");
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
         }
+    }
+    public static void task5 () {
+        System.out.println("Задача 5");
+        float deposit = 15_000;
+        float percent = 7 / 100f;
+        int month = 0;
+        while (deposit <= 12_000_000) {
+            deposit = deposit + deposit * percent;
+            month++;
+            if (month % 6 ==0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
+            }
+        }
+        System.out.println("Через " + month + " месяцев, сумма накоплений равна " + deposit + " рублей. Цель достигнута.");
     }
 }
