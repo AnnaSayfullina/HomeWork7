@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1 () {
@@ -93,6 +94,17 @@ public class Main {
         int friday = 1;
         for (; friday <= 31; friday+=7) {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+        }
+    }
+    public static void task8 () {
+        System.out.println("Задача 8");
+        int year1 = 200;
+        int year2 = 100;
+        int yearNow = 2022;
+        for (int year = 0; year <= yearNow + year2; year += 79) {
+            if (year >= yearNow - year1) {
+                System.out.println(year);
+            }
         }
     }
 }
