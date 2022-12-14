@@ -18,6 +18,20 @@ public class Main {
 
     public static void task2 () {
         System.out.println("Задача 2");
-
+        int i = 1;
+        while (i <=10) {
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println();
+        i--;
+        for (; i >0; i--){
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        for (int a = 10; a > 0; a--) {
+            System.out.print(a + " ");
+        }
+        System.out.println();
     }
 }
