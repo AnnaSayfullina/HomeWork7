@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1 () {
@@ -71,5 +72,19 @@ public class Main {
             }
         }
         System.out.println("Через " + month + " месяцев, сумма накоплений равна " + deposit + " рублей. Цель достигнута.");
+    }
+    public static void task6 () {
+        System.out.println("Задача 6");
+        float deposit = 15_000;
+        float percent = 7 / 100f;
+        int month = 0;
+        int years = 9;
+        while (month <= years*12) {
+            deposit = deposit + deposit * percent;
+            month++;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
+            }
+        }
     }
 }
